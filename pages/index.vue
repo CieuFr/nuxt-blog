@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col justify-evenly">
-        <h1 id="titre" class="h-[50px]"/>
+        <h1 id="titre" class="h-[100px]"/>
         <div class="mb-10">
             <article>
                 <ContentDoc>

@@ -48,7 +48,11 @@
     }
 
     h3, h4, h5, h6 {
-        @apply text-xl italic;
+        @apply text-xl;
+    }
+
+    h4, h5, h6 {
+        @apply italic
     }
 
     main ul {
