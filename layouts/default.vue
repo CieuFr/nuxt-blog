@@ -3,10 +3,9 @@
         <header>
             <nav class="flex flex-row justify-evenly py-5 border-b border-b-blue mb-10">
                 <NuxtLink class="text-2xl text-blue hover:text-white hover:underline" to="/">Accueil</NuxtLink>
-                <NuxtLink class="text-2xl text-blue hover:text-white hover:underline" to="/blog">Blog</NuxtLink>
             </nav>
         </header>
-        <main>
+        <main class="max-w-[768px] mx-auto">
             <slot/>
         </main>
         <footer class="flex flex-row justify-around">

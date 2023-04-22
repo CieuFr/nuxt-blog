@@ -1,6 +1,5 @@
 ---
-title: Article 1
-date: 02/04/2016
+date: 22/04/2023
 description: This is the description of the article
 tags: [vue, ts, strapi, nuxt, pwa]
 ---

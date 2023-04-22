@@ -1,13 +1,15 @@
 <template>
     <div class="flex flex-col justify-evenly">
-        <h1 id="titre"/>
+        <h1 id="titre" class="h-[50px]"/>
         <div class="mb-10">
-            <ContentDoc>
-                <template #empty/>
-            </ContentDoc>
+            <article>
+                <ContentDoc>
+                    <template #empty/>
+                </ContentDoc>
+            </article>
         </div>
         <div>
-            <h2>Les derniers articles</h2>
+            <h2>Les articles</h2>
             <ContentList :query="query" v-slot="{ list }">
                 <template v-for="blog in list" :key="blog._id">
                     <BlogCard
@@ -27,14 +29,14 @@ import Typed from 'typed.js';
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types';
 
 const query: QueryBuilderParams = {
-    path: '/blog',
+    path: '/',
     sort: [{date: -1}],
-    where: [ { _path: { $ne: '/blog' } }],
+    where: [ { _path: { $ne: '/' } }],
 };
 
 onMounted(() => {
      new Typed('#titre', {
-        strings: ['Je suis Marc-Alexis Azaïs', "Je suis passionné", "Je suis développeur"],
+        strings: ["Je suis dévelopeur", "Je suis passioné", "Bienvenu sur mon site"],
         typeSpeed: 100,
         backSpeed: 25,
         loop: false,

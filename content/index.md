@@ -1,4 +1,12 @@
-Lorem markdownum regio bina, circinat nostri quod: at diem stabam. Vomit est,
-**novo succedat in** apri intravit cernens. Inde Abas cinctaque post cessere
-patulos paenitet patruus. Iuguli maneas, at dixit, partem tibi se signaque
-omnibus et quod totumque. Vox sanguis quoque ne iam geminas, et saeva.
+---
+title: Marc-Alexis Azaïs Développeur
+description:
+---
+
+## Qui suis-je ?
+
+Je m'appelle Marc-Alexis, je suis développeur disposant d'un titre de master de l'université de La Rochelle. D'abord ayant une formation en Data, je me suis passioné pour le développement logiciel et l'informatique en général.
+
+## Pourquoi ce site ?
+
+Ce site est mon premier vecteur de partage de connaissance de mes apprentissages et d'expression de mes projets. J'ai pour objectif de l'alimenter régulièrement pour perfectionner les sujets que je voudrais présenter.
