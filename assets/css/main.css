@@ -23,6 +23,10 @@
         @apply my-3;
     }
 
+    article img {
+        @apply mx-auto;
+    }
+
     p {
         @apply text-center;
     }

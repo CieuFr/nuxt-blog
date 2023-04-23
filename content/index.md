@@ -3,8 +3,6 @@ title: Marc-Alexis Azaïs Développeur
 description:
 ---
 
-## Qui suis-je ?
-
 Je m'appelle Marc-Alexis, je suis développeur disposant d'un titre de master de l'université de La Rochelle. D'abord ayant une formation en Data, je me suis passioné pour le développement logiciel et l'informatique en général.
 
 ## Pourquoi ce site ?

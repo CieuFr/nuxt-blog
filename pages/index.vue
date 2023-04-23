@@ -36,7 +36,7 @@ const query: QueryBuilderParams = {
 
 onMounted(() => {
      new Typed('#titre', {
-        strings: ["Je suis dévelopeur", "Je suis passioné", "Bienvenu sur mon site"],
+        strings: ["Je suis dévelopeur", "Je suis passioné", "Bienvenue sur mon site"],
         typeSpeed: 100,
         backSpeed: 25,
         loop: false,
