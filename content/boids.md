@@ -386,4 +386,4 @@ Après avoir implémenter nos classes dans le fichier main.ts, créer la page in
 
 **Essayer de modifier les paramètres de la simulation pour voir comment les boids réagissent !**
 
-<iframe src="/boids/app/index.html" class="w-full h-[700px]"/>
+<iframe title="Simulation des boids" src="/boids/app/index.html" class="w-full h-[700px]"/>
