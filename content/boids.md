@@ -309,23 +309,30 @@ move(flock: Boid[], size: Size, param: Param) {
 On ajoutera la méthode draw qui dessinera nos boids sous forme de triangles.
 
 ```typescript
-    /**
-     * Draw the boid
-     * @param {CanvasRenderingContext2D} ctx - canvas context
-     */
-    draw(ctx: CanvasRenderingContext2D): void {
-        ctx.translate(this.position.x, this.position.y);
-        ctx.rotate(this.velocity.angle());
-        ctx.translate(-this.position.x, -this.position.y);
-        ctx.fillStyle = Boid.color;
-        ctx.beginPath();
-        ctx.moveTo(this.position.x, this.position.y);
-        ctx.lineTo(this.position.x - 15, this.position.y + 5);
-        ctx.lineTo(this.position.x - 15, this.position.y - 5);
-        ctx.lineTo(this.position.x, this.position.y);
-        ctx.fill();
-        ctx.setTransform(1, 0, 0, 1, 0, 0);
-    }
+/**
+ * Draw the boid
+ * @param {CanvasRenderingContext2D} ctx - canvas context
+ */
+draw(ctx: CanvasRenderingContext2D): void {
+    // Rotate the canvas to the direction of the boid
+    ctx.translate(this.position.x, this.position.y);
+    ctx.rotate(this.velocity.angle());
+    ctx.translate(-this.position.x, -this.position.y);
+
+    // Draw the boid
+    ctx.fillStyle = Boid.color;
+    ctx.beginPath();
+    ctx.moveTo(this.position.x, this.position.y);
+    ctx.lineTo(this.position.x - 15, this.position.y + 5);
+    ctx.lineTo(this.position.x - 15, this.position.y - 5);
+    ctx.lineTo(this.position.x, this.position.y);
+    ctx.closePath();
+    ctx.fill();
+
+    // Restore the canvas
+    ctx.translate(this.position.x, this.position.y);
+    ctx.rotate(-this.velocity.angle());
+    ctx.translate(-this.position.x, -this.position.y);
 }
 ```
 
@@ -386,4 +393,4 @@ Après avoir implémenter nos classes dans le fichier main.ts, créer la page in
 
 **Essayer de modifier les paramètres de la simulation pour voir comment les boids réagissent !**
 
-<iframe title="Simulation des boids" src="/boids/app/index.html" class="w-full h-[700px]"/>
+<iframe title="Simulation des boids" src="/boids/app/index.html" class="w-full h-[800px]"/>
