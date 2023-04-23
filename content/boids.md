@@ -1,6 +1,6 @@
 ---
 date: 22/04/2023
-description: 
+description: Boids est le nom d'un programme informatique de vie artificielle, développé par Craig W. Reynolds en 1986, simulant le comportement d'une nuée d'oiseaux en vol. Dans cette article, nous allons voir comment nous pouvons implémenter ce comportement avec TypeScript.
 tags: [ts]
 ---
 
