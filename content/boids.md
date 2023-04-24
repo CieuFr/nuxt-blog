@@ -1,23 +1,23 @@
 ---
 date: 22/04/2023
-description: Boids est le nom d'un programme informatique de vie artificielle, développé par Craig W. Reynolds en 1986, simulant le comportement d'une nuée d'oiseaux en vol. Dans cette article, nous allons voir comment nous pouvons implémenter ce comportement avec TypeScript.
+description: Boids est le nom d'un programme informatique de vie artificielle, développé par Craig W. Reynolds en 1986, simulant le comportement d'une nuée d'oiseaux en vol. Dans cette article, nous allons implémenter ce comportement avec TypeScript.
 tags: [ts]
 ---
 
-# Simuler des nuées d'oiseau avec TypeScript
+# Simuler des nuées d'oiseaux avec TypeScript
 
-![boids](/boids/images/boids.gif)
-
-Boids est le nom d'un programme informatique de vie artificielle, développé par Craig W. Reynolds en 1986, simulant le comportement d'une nuée d'oiseaux en vol. Dans cette article, nous allons voir comment nous pouvons implémenter ce comportement avec TypeScript. Le code de l'article est disponible sur [GitHub](https://github.com/azaismarc/boids-ts)
+Boids est le nom d'un programme informatique de vie artificielle, développé par Craig W. Reynolds en 1986, simulant le comportement d'une nuée d'oiseaux en vol. Dans cette article, nous allons implémenter ce comportement avec TypeScript. Le code de l'article est disponible sur [GitHub](https://github.com/azaismarc/boids-ts)
 
 Nous nous baserons sur le peudocode de [kfish](http://www.kfish.org/boids/pseudocode.html).
+
+![boids](/boids/images/boids.gif)
 
 ## Le comportement des boids
 
 Le comportement des boids est basé sur trois règles simples :
 - **Cohésion :** les boids essaient de rester proches des autres boids
-- **Alignement :** les boids essaient d'avoir la même direction que les autres boids
 - **Séparation :** les boids essaient de rester à une certaine distance des autres boids
+- **Alignement :** les boids essaient d'avoir la même direction que les autres boids
 
 ## Implémentation
 
@@ -189,7 +189,7 @@ private cohesion(flock: Boid[], cohesion: number): Vector {
 
 #### La séparation
 
-La séparation est la règle qui permet aux boids de rester à une certaine distance les uns des autres. Pour l'implémenter, lorsque lz distance entre deux boids est inférieure à la distance de séparation, ajouter la différence entre les deux positions au vecteur de séparation.
+La séparation est la règle qui permet aux boids de rester à une certaine distance les uns des autres. Pour l'implémenter, lorsque la distance entre deux boids est inférieure à la distance de séparation, ajouter la différence entre les deux positions au vecteur de séparation.
 
 ```typescript
 /**
@@ -235,7 +235,7 @@ private alignment(flock: Boid[], alignment: number): Vector {
 
 #### Limiter la vitesse
 
-Pour limiter la vitesse des boids, il faut vérifier que la vitesse est inférieure à la vitesse maximale. Si ce n'est pas le cas, diviser la vitesse du boid par la magnitude de la vitesse et multiplier le résultat par la vitesse maximale.
+Pour limiter la vitesse des boids, il faut vérifier que la vitesse est inférieure à la vitesse maximale. Si ce n'est pas le cas, diviser la vitesse du boid par la magnitude du vecteur vitesse et multiplier le résultat par la vitesse maximale.
 
 ```typescript
 /**
@@ -389,8 +389,6 @@ export default class Flock {
 
 ## La simulation
 
-Après avoir implémenter nos classes dans le fichier main.ts, créer la page index.html et modifier le fichier style.css, nous pouvons lancer la simulation testable dans l'iframe ci-dessous.
+Après avoir implémenter nos classes dans le fichier main.ts, créer la page index.html et modifier le fichier style.css, il n'y a plus qu'à exécuter la simulation !
 
-**Essayer de modifier les paramètres de la simulation pour voir comment les boids réagissent !**
-
-<iframe title="Simulation des boids" src="/boids/app/index.html" class="w-full h-[800px]"/>
+**Essayer de supprimer une des règles de la simulation et observer comment les boids réagissent !**
