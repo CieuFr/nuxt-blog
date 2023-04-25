@@ -19,7 +19,7 @@
             </div>
             <div class="mt-5 flex flex-col">
                 <label for="speed">Vitesse</label>
-                <input v-model="param.speed" min="0" max="20" step="1" type="range" id="speed"/>
+                <input v-model="param.speed" min="1" max="20" step="1" type="range" id="speed"/>
             </div>
         </div>
     </div>
