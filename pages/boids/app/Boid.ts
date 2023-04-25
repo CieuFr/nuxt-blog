@@ -89,7 +89,7 @@ export default class Boid {
      */
     private limit_velocity(speed: number): void {
 
-        if (speed === 0) {
+        if (speed < 1) {
             this.velocity = Vector.vector_null();
             return;
         }
