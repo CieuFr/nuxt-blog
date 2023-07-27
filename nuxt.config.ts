@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@nuxt/image-edge',
+    
   ],
   app: {
     head: {

@@ -9,9 +9,12 @@
   "devDependencies": {
     "@nuxt/content": "^2.5.2",
     "@nuxt/image-edge": "^1.0.0-28020728.5df24eb",
+    "@nuxt/typescript-build": "^3.0.1",
     "@nuxtjs/tailwindcss": "^6.6.6",
     "@types/node": "^18",
+    "@types/three": "^0.154.0",
     "nuxt": "^3.4.1",
+    "three": "^0.154.0",
     "typed.js": "^2.0.15"
   }
 }
